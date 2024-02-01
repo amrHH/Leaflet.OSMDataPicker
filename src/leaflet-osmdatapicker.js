@@ -9,9 +9,13 @@
       onAdd: function (map) {
         var button = L.DomUtil.create("button", "leaflet-osmdatapicker-button");
         button.innerHTML = "Open OSM Data Picker";
+        L.DomEvent.on(button, "click", function (e) {
+          L.DomEvent.stopPropagation(e);
 
-        L.DomEvent.on(button, "click", function () {
-          openOSMDataPickerDialog();
+          L.DrawingFunctions.startDrawing(map, function (drawnPolygon) {
+            openOSMDataPickerDialog();
+            console.log("Polygon drawn:", drawnPolygon);
+          });
         });
 
         return button;
