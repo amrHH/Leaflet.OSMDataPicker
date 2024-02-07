@@ -1,0 +1,2143 @@
+{
+    "aerialway": [
+        "cable_car",
+        "gondola",
+        "mixed_lift",
+        "chair_lift",
+        "drag_lift",
+        "t-bar",
+        "j-bar",
+        "platter",
+        "rope_tow",
+        "magic_carpet",
+        "zip_line",
+        "goods",
+        "pylon",
+        "station"
+    ],
+    "aeroway": [
+        "aerodrome",
+        "aircraft_crossing",
+        "apron",
+        "gate",
+        "hangar",
+        "helipad",
+        "heliport",
+        "navigationaid",
+        "runway",
+        "spaceport",
+        "taxiway",
+        "terminal",
+        "windsock"
+    ],
+    "amenity": [
+        "bar",
+        "biergarten",
+        "cafe",
+        "fast_food",
+        "food_court",
+        "ice_cream",
+        "pub",
+        "restaurant",
+        "college",
+        "dancing_school",
+        "driving_school",
+        "first_aid_school",
+        "kindergarten",
+        "language_school",
+        "library",
+        "surf_school",
+        "toy_library",
+        "research_institute",
+        "training",
+        "music_school",
+        "school",
+        "traffic_park",
+        "university",
+        "bicycle_parking",
+        "bicycle_repair_station",
+        "bicycle_rental",
+        "bicycle_wash",
+        "boat_rental",
+        "boat_sharing",
+        "bus_station",
+        "car_rental",
+        "car_sharing",
+        "car_wash",
+        "compressed_air",
+        "vehicle_inspection",
+        "charging_station",
+        "driver_training",
+        "ferry_terminal",
+        "fuel",
+        "grit_bin",
+        "motorcycle_parking",
+        "parking",
+        "parking_entrance",
+        "parking_space",
+        "taxi",
+        "weighbridge",
+        "atm",
+        "payment_terminal",
+        "bank",
+        "bureau_de_change",
+        "baby_hatch",
+        "clinic",
+        "dentist",
+        "doctors",
+        "hospital",
+        "nursing_home",
+        "pharmacy",
+        "social_facility",
+        "veterinary",
+        "arts_centre",
+        "brothel",
+        "casino",
+        "cinema",
+        "community_centre",
+        "conference_centre",
+        "events_venue",
+        "exhibition_centre",
+        "fountain",
+        "gambling",
+        "love_hotel",
+        "music_venue",
+        "nightclub",
+        "planetarium",
+        "public_bookcase",
+        "social_centre",
+        "stripclub",
+        "studio",
+        "swingerclub",
+        "theatre",
+        "courthouse",
+        "fire_station",
+        "police",
+        "post_box",
+        "post_depot",
+        "post_office",
+        "prison",
+        "ranger_station",
+        "townhall",
+        "bbq",
+        "bench",
+        "dog_toilet",
+        "dressing_room",
+        "drinking_water",
+        "give_box",
+        "mailroom",
+        "parcel_locker",
+        "shelter",
+        "shower",
+        "telephone",
+        "toilets",
+        "water_point",
+        "watering_place",
+        "sanitary_dump_station",
+        "recycling",
+        "waste_basket",
+        "waste_disposal",
+        "waste_transfer_station",
+        "animal_boarding",
+        "animal_breeding",
+        "animal_shelter",
+        "animal_training",
+        "baking_oven",
+        "clock",
+        "crematorium",
+        "dive_centre",
+        "funeral_hall",
+        "grave_yard",
+        "hunting_stand",
+        "internet_cafe",
+        "kitchen",
+        "kneipp_water_cure",
+        "lounger",
+        "marketplace",
+        "monastery",
+        "photo_booth",
+        "place_of_mourning",
+        "place_of_worship",
+        "public_bath",
+        "public_building",
+        "refugee_site",
+        "vending_machine",
+        "user defined"
+    ],
+    "barrier": [
+        "cable_barrier",
+        "city_wall",
+        "ditch",
+        "fence",
+        "guard_rail",
+        "handrail",
+        "hedge",
+        "kerb",
+        "retaining_wall",
+        "wall",
+        "block",
+        "bollard",
+        "border_control",
+        "bump_gate",
+        "bus_trap",
+        "cattle_grid",
+        "chain",
+        "cycle_barrier",
+        "debris",
+        "entrance",
+        "full-height_turnstile",
+        "gate",
+        "hampshire_gate",
+        "height_restrictor",
+        "horse_stile",
+        "jersey_barrier",
+        "kissing_gate",
+        "lift_gate",
+        "log",
+        "motorcycle_barrier",
+        "rope",
+        "sally_port",
+        "spikes",
+        "stile",
+        "sump_buster",
+        "swing_gate",
+        "toll_booth",
+        "turnstile",
+        "yes"
+    ],
+    "boundary": [
+        "aboriginal_lands",
+        "administrative",
+        "border_zone",
+        "forest",
+        "forest_compartment",
+        "hazard",
+        "maritime",
+        "marker",
+        "national_park",
+        "place",
+        "political",
+        "postal_code",
+        "protected_area",
+        "special_economic_zone",
+        "disputed",
+        "user defined"
+    ],
+    "admin_level": [
+        "(number)"
+    ],
+    "border_type": [
+        "*"
+    ],
+    "start_date": [
+        "(date)",
+        "<date>",
+        "Date"
+    ],
+    "building": [
+        "apartments",
+        "barracks",
+        "bungalow",
+        "cabin",
+        "detached",
+        "dormitory",
+        "farm",
+        "ger",
+        "hotel",
+        "house",
+        "houseboat",
+        "residential",
+        "semidetached_house",
+        "static_caravan",
+        "stilt_house",
+        "terrace",
+        "tree_house",
+        "trullo",
+        "commercial",
+        "industrial",
+        "kiosk",
+        "office",
+        "retail",
+        "supermarket",
+        "warehouse",
+        "religious",
+        "cathedral",
+        "chapel",
+        "church",
+        "kingdom_hall",
+        "monastery",
+        "mosque",
+        "presbytery",
+        "shrine",
+        "synagogue",
+        "temple",
+        "bakehouse",
+        "bridge",
+        "civic",
+        "college",
+        "fire_station",
+        "government",
+        "gatehouse",
+        "hospital",
+        "kindergarten",
+        "museum",
+        "public",
+        "school",
+        "toilets",
+        "train_station",
+        "transportation",
+        "university",
+        "barn",
+        "conservatory",
+        "cowshed",
+        "farm_auxiliary",
+        "greenhouse",
+        "slurry_tank",
+        "stable",
+        "sty",
+        "livestock",
+        "grandstand",
+        "pavilion",
+        "riding_hall",
+        "sports_hall",
+        "sports_centre",
+        "stadium",
+        "allotment_house",
+        "boathouse",
+        "hangar",
+        "hut",
+        "shed",
+        "carport",
+        "garage",
+        "garages",
+        "parking",
+        "digester",
+        "service",
+        "tech_cab",
+        "transformer_tower",
+        "water_tower",
+        "storage_tank",
+        "silo",
+        "beach_hut",
+        "bunker",
+        "castle",
+        "construction",
+        "container",
+        "guardhouse",
+        "military",
+        "outbuilding",
+        "pagoda",
+        "quonset_hut",
+        "roof",
+        "ruins",
+        "tent",
+        "tower",
+        "windmill",
+        "[[ Too many Data Items entities accessed. |  yes  ]]",
+        "user defined"
+    ],
+    "building:colour": [
+        "<RGB hex triplet> | <W3C colour name>"
+    ],
+    "building:fireproof": [
+        "yes | no"
+    ],
+    "building:flats": [
+        "<number>"
+    ],
+    "building:levels": [
+        "<number>"
+    ],
+    "building:material": [
+        "<material type>"
+    ],
+    "building:min_level": [
+        "<number>"
+    ],
+    "building:part": [
+        "As building"
+    ],
+    "building:soft_storey": [
+        "yes | no | reinforced"
+    ],
+    "construction_date": [
+        "<date>"
+    ],
+    "entrance": [
+        "yes |  main |  exit |  service |  emergency"
+    ],
+    "height": [
+        "<number>"
+    ],
+    "max_level": [
+        "<number>"
+    ],
+    "min_level": [
+        "<number>"
+    ],
+    "non_existent_levels": [
+        "<number>"
+    ],
+    "craft": [
+        "agricultural_engines",
+        "atelier",
+        "bakery",
+        "basket_maker",
+        "beekeeper",
+        "blacksmith",
+        "boatbuilder",
+        "bookbinder",
+        "brewery",
+        "builder",
+        "cabinet_maker",
+        "candlemaker",
+        "car_painter",
+        "carpenter",
+        "carpet_layer",
+        "caterer",
+        "chimney_sweeper",
+        "cleaning",
+        "clockmaker",
+        "confectionery",
+        "cooper",
+        "dental_technician",
+        "distillery",
+        "door_construction",
+        "dressmaker",
+        "electronics_repair",
+        "embroiderer",
+        "electrician",
+        "engraver",
+        "fence_maker",
+        "floorer",
+        "gardener",
+        "glaziery",
+        "goldsmith",
+        "grinding_mill",
+        "handicraft",
+        "hvac",
+        "insulation",
+        "interior_decorator",
+        "interior_work",
+        "jeweller",
+        "joiner",
+        "key_cutter",
+        "locksmith",
+        "metal_construction",
+        "mint",
+        "musical_instrument",
+        "oil_mill",
+        "optician",
+        "organ_builder",
+        "painter",
+        "parquet_layer",
+        "paver",
+        "pest_control",
+        "photographer",
+        "photographic_laboratory",
+        "photovoltaic",
+        "piano_tuner",
+        "plasterer",
+        "plumber",
+        "pottery",
+        "printer",
+        "printmaker",
+        "restoration",
+        "rigger",
+        "roofer",
+        "saddler",
+        "sailmaker",
+        "sawmill",
+        "scaffolder",
+        "sculptor",
+        "shoemaker",
+        "signmaker",
+        "stand_builder",
+        "stonemason",
+        "stove_fitter",
+        "sun_protection",
+        "tailor",
+        "tiler",
+        "tinsmith",
+        "toolmaker",
+        "turner",
+        "upholsterer",
+        "watchmaker",
+        "water_well_drilling",
+        "window_construction",
+        "winery"
+    ],
+    "emergency": [
+        "ambulance_station",
+        "defibrillator",
+        "landing_site",
+        "emergency_ward_entrance",
+        "fire_service_inlet",
+        "fire_alarm_box",
+        "fire_extinguisher",
+        "fire_hose",
+        "fire_hydrant",
+        "water_tank",
+        "suction_point",
+        "lifeguard",
+        "life_ring",
+        "assembly_point",
+        "phone",
+        "siren",
+        "drinking_water",
+        "phone",
+        "yes"
+    ],
+    "lifeguard": [
+        "tower"
+    ],
+    "geological": [
+        "moraine",
+        "outcrop",
+        "volcanic_caldera_rim",
+        "fault",
+        "palaeontological_site",
+        "volcanic_lava_field",
+        "volcanic_vent",
+        "glacial_erratic",
+        "rock_glacier",
+        "giants_kettle",
+        "meteor_crater",
+        "hoodoo",
+        "columnar_jointing"
+    ],
+    "healthcare=alternative": [
+        "Someone practising  alternative or complementary medicine but is not a  medical practitioner or a place where alternative or complementary medicine is practices that does not fit into the other categories (except healthcare=yes)"
+    ],
+    "healthcare=audiologist": [
+        "Audiologist; if linked with a shop please use shop=hearing_aids instead"
+    ],
+    "healthcare=birthing_centre": [
+        "A non-clinical  birthing centre operated by midwives."
+    ],
+    "healthcare=blood_bank": [
+        "Blood bank"
+    ],
+    "healthcare=blood_donation": [
+        "A facility where you can donate blood, plasma and/or platelets, and possibly have stem cell samples taken."
+    ],
+    "healthcare=counselling": [
+        "Healthcare counselling, e.g. an addiction centre, a nutritionist, or a sex therapist. Also see healthcare=nutrition_counselling"
+    ],
+    "healthcare=dialysis": [
+        "A clinic for day patients to get a haemodialysis  Dialysis"
+    ],
+    "healthcare=hospice": [
+        "A Hospice which provides palliative care to terminal ill people and support to their relatives."
+    ],
+    "healthcare=laboratory": [
+        "Medical laboratory also called (analytical, diagnostic) is a place that analyses body fluids such as blood, urine, faeces etc ."
+    ],
+    "healthcare=midwife": [
+        "A  Midwife, a health professional who cares for mothers and newborns around childbirth."
+    ],
+    "healthcare=nurse": [
+        "Nursing. A facility where some nurses may receive their patients."
+    ],
+    "healthcare=occupational_therapist": [
+        "Someone who practices  occupational therapy but is not a  medical practitioner."
+    ],
+    "healthcare=optometrist": [
+        "Optometrist; If linked with a shop please use shop=optician instead."
+    ],
+    "healthcare=physiotherapist": [
+        "Someone who practices  physical therapy (or  kinesiotherapy in French-speaking countries) but is not a  medical practitioner."
+    ],
+    "healthcare=podiatrist": [
+        "Someone who practices  podiatry but is not a Physician on Wikipedia."
+    ],
+    "healthcare=psychotherapist": [
+        "Someone who practices  psychotherapy but is not a Physician on Wikipedia."
+    ],
+    "healthcare=rehabilitation": [
+        "Medical rehabilitation facility; should not be used for a wellness clinic or hotel."
+    ],
+    "healthcare=sample_collection": [
+        "Site or dedicated healthcare facility where samples of blood/urine/etc are obtained or collected for purpose of analysing them for healthcare diagnostics."
+    ],
+    "healthcare=speech_therapist": [
+        "Someone who practices  speech and language therapy."
+    ],
+    "healthcare=vaccination_centre": [
+        "a healthcare facility specifically dedicated to administering vaccinations to individuals, to provide immunisation against infectious diseases."
+    ],
+    "highway": [
+        "motorway",
+        "trunk",
+        "primary",
+        "secondary",
+        "tertiary",
+        "unclassified",
+        "residential",
+        "motorway_link",
+        "trunk_link",
+        "primary_link",
+        "secondary_link",
+        "tertiary_link",
+        "living_street",
+        "service",
+        "pedestrian",
+        "track",
+        "bus_guideway",
+        "escape",
+        "raceway",
+        "road",
+        "busway",
+        "footway",
+        "bridleway",
+        "steps",
+        "corridor",
+        "path",
+        "via_ferrata",
+        "cycleway",
+        "proposed",
+        "construction",
+        "bus_stop",
+        "crossing",
+        "cyclist_waiting_aid",
+        "elevator",
+        "emergency_bay",
+        "emergency_access_point",
+        "give_way",
+        "ladder",
+        "milestone",
+        "mini_roundabout",
+        "motorway_junction",
+        "passing_place",
+        "platform",
+        "rest_area",
+        "services",
+        "speed_camera",
+        "stop",
+        "street_lamp",
+        "toll_gantry",
+        "traffic_mirror",
+        "traffic_signals",
+        "trailhead",
+        "turning_circle",
+        "turning_loop",
+        "User Defined"
+    ],
+    "footway": [
+        "sidewalk",
+        "crossing"
+    ],
+    "sidewalk": [
+        "both | left | right | no"
+    ],
+    "cycleway": [
+        "lane",
+        "opposite",
+        "opposite_lane",
+        "track",
+        "opposite_track",
+        "share_busway",
+        "opposite_share_busway",
+        "shared_lane"
+    ],
+    "busway": [
+        "lane"
+    ],
+    "parking:left / :right / :both(hereafter: parking:side)": [
+        "lane | street_side | on_kerb | half_on_kerb | shoulder | no | separate | yes"
+    ],
+    "parking:sideorientation=*": [
+        "parallel | diagonal | perpendicular"
+    ],
+    "abutters": [
+        "commercial | industrial | mixed | residential | retail etc."
+    ],
+    "bicycle_road": [
+        "yes"
+    ],
+    "bus_bay": [
+        "both | left | right"
+    ],
+    "change": [
+        "yes | no | not_right | not_left | only_right | only_left"
+    ],
+    "destination": [
+        "<place name of destination>"
+    ],
+    "embankment": [
+        "yes | dyke",
+        "yes",
+        "yes"
+    ],
+    "embedded_rails": [
+        "yes | <type of railway>",
+        "yes/<type of railway>"
+    ],
+    "ford": [
+        "yes"
+    ],
+    "ice_road": [
+        "yes"
+    ],
+    "incline": [
+        "Number % | ° | up | down"
+    ],
+    "junction": [
+        "roundabout"
+    ],
+    "lanes": [
+        "<number>"
+    ],
+    "lane_markings": [
+        "yes | no"
+    ],
+    "lit": [
+        "yes | no"
+    ],
+    "maxspeed": [
+        "<number>",
+        "Speed"
+    ],
+    "motorroad": [
+        "yes | no"
+    ],
+    "mountain_pass": [
+        "yes"
+    ],
+    "mtb:scale": [
+        "0-6"
+    ],
+    "mtb:scale:uphill": [
+        "0-5"
+    ],
+    "mtb:scale:imba": [
+        "0-4"
+    ],
+    "mtb:description": [
+        "Text"
+    ],
+    "oneway": [
+        "yes | no | reversible",
+        "yes / no / -1"
+    ],
+    "oneway:bicycle": [
+        "yes | no |"
+    ],
+    "overtaking": [
+        "yes | no | caution | both | forward | backward"
+    ],
+    "parking:lane": [
+        "parallel | diagonal | perpendicular | marked | no_parking | no_stopping | fire_lane."
+    ],
+    "parking:condition": [
+        "free | ticket | disc | residents | customers | private"
+    ],
+    "passing_places": [
+        "yes"
+    ],
+    "priority": [
+        "forward | backward"
+    ],
+    "priority_road": [
+        "designated | yes_unposted | end"
+    ],
+    "sac_scale": [
+        "hiking | mountain_hiking | demanding_mountain_hiking | alpine_hiking | demanding_alpine_hiking | difficult_alpine_hiking"
+    ],
+    "service": [
+        "alley |  driveway |  parking_aisle etc.",
+        "crossover",
+        "siding",
+        "spur",
+        "yard"
+    ],
+    "shoulder": [
+        "no | yes | right | both | left"
+    ],
+    "smoothness": [
+        "excellent | good | intermediate | bad | very_bad | horrible | very_horrible | impassable"
+    ],
+    "surface": [
+        "paved | unpaved | asphalt | concrete | paving_stones | sett | cobblestone | metal | wood | compacted | fine_gravel | gravel | pebblestone | plastic | grass_paver | grass | dirt | earth | mud | sand | ground"
+    ],
+    "tactile_paving": [
+        "yes | no",
+        "yes /no"
+    ],
+    "tracktype": [
+        "grade1 | grade2 | grade3 | grade4 | grade5"
+    ],
+    "traffic_calming": [
+        "bump | hump | table | island | cushion | yes | etc."
+    ],
+    "trail_visibility": [
+        "excellent | good | intermediate | bad | horrible | no"
+    ],
+    "trailblazed": [
+        "yes | no | poles | cairns | symbols"
+    ],
+    "trailblazed:visibility": [
+        "excellent | good | intermediate | bad | horrible | no"
+    ],
+    "turn": [
+        "left | slight_left | through | right | slight_right | merge_to_left | merge_to_right | reverse"
+    ],
+    "width": [
+        "<number>",
+        "Number"
+    ],
+    "winter_road": [
+        "yes"
+    ],
+    "historic": [
+        "aircraft",
+        "anchor",
+        "aqueduct",
+        "archaeological_site",
+        "battlefield",
+        "bomb_crater",
+        "boundary_stone",
+        "building",
+        "cannon",
+        "castle",
+        "castle_wall",
+        "cattle_crush",
+        "charcoal_pile",
+        "church",
+        "city_gate",
+        "citywalls",
+        "creamery",
+        "district",
+        "farm",
+        "fort",
+        "gallows",
+        "house",
+        "highwater_mark",
+        "locomotive",
+        "machine",
+        "manor",
+        "memorial",
+        "milestone",
+        "millstone",
+        "monastery",
+        "monument",
+        "mosque",
+        "ogham_stone",
+        "optical_telegraph",
+        "pillory",
+        "railway_car",
+        "road",
+        "ruins",
+        "rune_stone",
+        "shieling",
+        "ship",
+        "stećak",
+        "stone",
+        "tank",
+        "temple",
+        "tomb",
+        "tower",
+        "vehicle",
+        "wayside_cross",
+        "wayside_shrine",
+        "wreck",
+        "yes"
+    ],
+    "landuse": [
+        "commercial",
+        "construction",
+        "education",
+        "fairground",
+        "industrial",
+        "residential",
+        "retail",
+        "institutional",
+        "aquaculture",
+        "allotments",
+        "farmland",
+        "farmyard",
+        "paddy",
+        "animal_keeping",
+        "flowerbed",
+        "forest",
+        "greenhouse_horticulture",
+        "meadow",
+        "orchard",
+        "plant_nursery",
+        "vineyard",
+        "basin",
+        "reservoir",
+        "salt_pond",
+        "brownfield",
+        "cemetery",
+        "conservation",
+        "depot",
+        "garages",
+        "grass",
+        "greenfield",
+        "landfill",
+        "military",
+        "port",
+        "quarry",
+        "railway",
+        "recreation_ground",
+        "religious",
+        "village_green",
+        "winter_sports",
+        "user defined",
+        "railway"
+    ],
+    "leisure": [
+        "adult_gaming_centre",
+        "amusement_arcade",
+        "beach_resort",
+        "bandstand",
+        "bird_hide",
+        "common",
+        "dance",
+        "disc_golf_course",
+        "dog_park",
+        "escape_game",
+        "firepit",
+        "fishing",
+        "fitness_centre",
+        "fitness_station",
+        "garden",
+        "hackerspace",
+        "horse_riding",
+        "ice_rink",
+        "marina",
+        "miniature_golf",
+        "nature_reserve",
+        "park",
+        "picnic_table",
+        "pitch",
+        "playground",
+        "slipway",
+        "sports_centre",
+        "stadium",
+        "summer_camp",
+        "swimming_area",
+        "swimming_pool",
+        "track",
+        "water_park"
+    ],
+    "man_made": [
+        "adit",
+        "beacon",
+        "breakwater",
+        "bridge",
+        "bunker_silo",
+        "carpet_hanger",
+        "chimney",
+        "column",
+        "communications_tower",
+        "crane",
+        "cross",
+        "cutline",
+        "clearcut",
+        "dovecote",
+        "dyke",
+        "embankment",
+        "flagpole",
+        "gasometer",
+        "goods_conveyor",
+        "groyne",
+        "guard_stone",
+        "kiln",
+        "lighthouse",
+        "mast",
+        "mineshaft",
+        "monitoring_station",
+        "obelisk",
+        "observatory",
+        "offshore_platform",
+        "petroleum_well",
+        "pier",
+        "pipeline",
+        "pump",
+        "pumping_station",
+        "reservoir_covered",
+        "silo",
+        "snow_fence",
+        "snow_net",
+        "storage_tank",
+        "street_cabinet",
+        "stupa",
+        "surveillance",
+        "survey_point",
+        "tailings_pond",
+        "telescope",
+        "tower",
+        "video_wall",
+        "wastewater_plant",
+        "watermill",
+        "water_tower",
+        "water_well",
+        "water_tap",
+        "water_works",
+        "wildlife_crossing",
+        "windmill",
+        "works",
+        "yes"
+    ],
+    "military": [
+        "academy",
+        "airfield",
+        "base",
+        "bunker",
+        "barracks",
+        "checkpoint",
+        "danger_area",
+        "nuclear_explosion_site",
+        "obstacle_course",
+        "office",
+        "range",
+        "school",
+        "training_area",
+        "trench"
+    ],
+    "natural": [
+        "fell",
+        "grassland",
+        "heath",
+        "moor",
+        "scrub",
+        "shrubbery",
+        "tree",
+        "tree_row",
+        "tundra",
+        "wood",
+        "bay",
+        "beach",
+        "blowhole",
+        "cape",
+        "coastline",
+        "crevasse",
+        "geyser",
+        "glacier",
+        "hot_spring",
+        "isthmus",
+        "mud",
+        "peninsula",
+        "reef",
+        "shingle",
+        "shoal",
+        "spring",
+        "strait",
+        "water",
+        "wetland",
+        "arch",
+        "arete",
+        "bare_rock",
+        "blockfield",
+        "cave_entrance",
+        "cliff",
+        "dune",
+        "earth_bank",
+        "fumarole",
+        "hill",
+        "peak",
+        "ridge",
+        "rock",
+        "saddle",
+        "sand",
+        "scree",
+        "sinkhole",
+        "stone",
+        "valley",
+        "volcano"
+    ],
+    "office": [
+        "accountant",
+        "administrative",
+        "advertising_agency",
+        "architect",
+        "association",
+        "chamber",
+        "charity",
+        "company",
+        "construction_company",
+        "consulting",
+        "courier",
+        "coworking",
+        "diplomatic",
+        "educational_institution",
+        "employment_agency",
+        "energy_supplier",
+        "engineer",
+        "estate_agent",
+        "financial",
+        "financial_advisor",
+        "forestry",
+        "foundation",
+        "geodesist",
+        "government",
+        "graphic_design",
+        "guide",
+        "harbour_master",
+        "insurance",
+        "it",
+        "lawyer",
+        "logistics",
+        "moving_company",
+        "newspaper",
+        "ngo",
+        "notary",
+        "politician",
+        "political_party",
+        "property_management",
+        "publisher",
+        "quango",
+        "religion",
+        "research",
+        "security",
+        "surveyor",
+        "tax_advisor",
+        "telecommunication",
+        "therapist",
+        "travel_agent",
+        "tutoring",
+        "union",
+        "visa",
+        "water_utility",
+        "yes"
+    ],
+    "place": [
+        "country",
+        "state",
+        "region",
+        "province",
+        "district",
+        "county",
+        "municipality",
+        "city",
+        "borough",
+        "suburb",
+        "quarter",
+        "neighbourhood",
+        "city_block",
+        "plot",
+        "town",
+        "village",
+        "hamlet",
+        "isolated_dwelling",
+        "farm",
+        "allotments",
+        "continent",
+        "archipelago",
+        "island",
+        "islet",
+        "square",
+        "locality",
+        "polder",
+        "sea",
+        "ocean"
+    ],
+    "population": [
+        ""
+    ],
+    "is_in": [
+        ""
+    ],
+    "power": [
+        "cable",
+        "catenary_mast",
+        "compensator",
+        "connection",
+        "converter",
+        "generator",
+        "heliostat",
+        "insulator",
+        "line",
+        "minor_line",
+        "plant",
+        "pole",
+        "portal",
+        "substation",
+        "switch",
+        "switchgear",
+        "terminal",
+        "tower",
+        "transformer"
+    ],
+    "line": [
+        "busbar",
+        "bay"
+    ],
+    "public_transport": [
+        "stop_position",
+        "platform",
+        "station",
+        "stop_area",
+        "stop_area_group",
+        "stop_position",
+        "platform",
+        "station"
+    ],
+    "railway": [
+        "abandoned",
+        "construction",
+        "disused",
+        "funicular",
+        "light_rail",
+        "miniature",
+        "monorail",
+        "narrow_gauge",
+        "preserved",
+        "rail",
+        "subway",
+        "tram",
+        "halt",
+        "platform",
+        "station",
+        "subway_entrance",
+        "tram_stop",
+        "buffer_stop",
+        "derail",
+        "crossing",
+        "level_crossing",
+        "tram_level_crossing",
+        "signal",
+        "switch",
+        "railway_crossing",
+        "turntable",
+        "roundhouse",
+        "traverser",
+        "wash",
+        "water_crane",
+        "ventilation_shaft",
+        "user defined"
+    ],
+    "bridge": [
+        "yes",
+        "yes / aqueduct / viaduct / cantilever / movable / covered / …"
+    ],
+    "cutting": [
+        "yes",
+        "yes / left / right"
+    ],
+    "electrified": [
+        "contact_line railyesno",
+        "contact_line / rail"
+    ],
+    "frequency": [
+        "number [Hz]",
+        "Number"
+    ],
+    "railway:track_ref": [
+        "number"
+    ],
+    "tunnel": [
+        "yes",
+        "yes"
+    ],
+    "tracks": [
+        "number"
+    ],
+    "usage": [
+        "mainbranchindustrialmilitarytourismscientifictest"
+    ],
+    "voltage": [
+        "number"
+    ],
+    "route": [
+        "bicycle",
+        "bus",
+        "canoe",
+        "detour",
+        "ferry",
+        "foot",
+        "hiking",
+        "horse",
+        "inline_skates",
+        "light_rail",
+        "mtb",
+        "piste",
+        "railway",
+        "road",
+        "running",
+        "ski",
+        "subway",
+        "train",
+        "tracks",
+        "tram",
+        "trolleybus",
+        "User defined"
+    ],
+    "shop": [
+        "alcohol",
+        "bakery",
+        "beverages",
+        "brewing_supplies",
+        "butcher",
+        "cheese",
+        "chocolate",
+        "coffee",
+        "confectionery",
+        "convenience",
+        "deli",
+        "dairy",
+        "farm",
+        "frozen_food",
+        "greengrocer",
+        "health_food",
+        "ice_cream",
+        "pasta",
+        "pastry",
+        "seafood",
+        "spices",
+        "tea",
+        "wine",
+        "water",
+        "food",
+        "department_store",
+        "general",
+        "kiosk",
+        "mall",
+        "supermarket",
+        "wholesale",
+        "baby_goods",
+        "bag",
+        "boutique",
+        "clothes",
+        "fabric",
+        "fashion",
+        "fashion_accessories",
+        "jewelry",
+        "leather",
+        "sewing",
+        "shoes",
+        "shoe_repair",
+        "tailor",
+        "watches",
+        "wool",
+        "charity",
+        "second_hand",
+        "variety_store",
+        "beauty",
+        "chemist",
+        "cosmetics",
+        "erotic",
+        "hairdresser",
+        "hairdresser_supply",
+        "hearing_aids",
+        "herbalist",
+        "massage",
+        "medical_supply",
+        "nutrition_supplements",
+        "optician",
+        "perfumery",
+        "tattoo",
+        "agrarian",
+        "appliance",
+        "bathroom_furnishing",
+        "doityourself",
+        "electrical",
+        "energy",
+        "fireplace",
+        "florist",
+        "garden_centre",
+        "garden_furniture",
+        "gas",
+        "glaziery",
+        "groundskeeping",
+        "hardware",
+        "houseware",
+        "locksmith",
+        "paint",
+        "pottery",
+        "security",
+        "trade",
+        "antiques",
+        "bed",
+        "candles",
+        "carpet",
+        "curtain",
+        "doors",
+        "flooring",
+        "furniture",
+        "household_linen",
+        "interior_decoration",
+        "kitchen",
+        "lighting",
+        "tiles",
+        "window_blind",
+        "computer",
+        "electronics",
+        "hifi",
+        "mobile_phone",
+        "radiotechnics",
+        "telecommunication",
+        "vacuum_cleaner",
+        "printer_ink",
+        "atv",
+        "bicycle",
+        "boat",
+        "car",
+        "car_repair",
+        "motorcycle_repair",
+        "car_parts",
+        "caravan",
+        "fuel",
+        "fishing",
+        "surf",
+        "golf",
+        "hunting",
+        "jetski",
+        "[[ Too many Data Items entities accessed. |  military_surplus  ]]",
+        "motorcycle",
+        "outdoor",
+        "scuba_diving",
+        "ski",
+        "snowmobile",
+        "sports",
+        "swimming_pool",
+        "trailer",
+        "tyres",
+        "art",
+        "camera",
+        "collector",
+        "craft",
+        "frame",
+        "games",
+        "model",
+        "music",
+        "musical_instrument",
+        "photo",
+        "trophy",
+        "video",
+        "video_games",
+        "anime",
+        "books",
+        "gift",
+        "lottery",
+        "newsagent",
+        "stationery",
+        "ticket",
+        "bookmaker",
+        "cannabis",
+        "copyshop",
+        "dry_cleaning",
+        "e-cigarette",
+        "funeral_directors",
+        "insurance",
+        "laundry",
+        "money_lender",
+        "outpost",
+        "party",
+        "pawnbroker",
+        "pest_control",
+        "pet",
+        "pet_grooming",
+        "pyrotechnics",
+        "religion",
+        "storage_rental",
+        "tobacco",
+        "toys",
+        "travel_agency",
+        "weapons",
+        "vacant",
+        "yes    - use more specific value if possible",
+        "user defined"
+    ],
+    "sport": [
+        "9pin",
+        "10pin",
+        "aerobics",
+        "american_football",
+        "aikido",
+        "archery",
+        "athletics",
+        "australian_football",
+        "badminton",
+        "bandy",
+        "baseball",
+        "basketball",
+        "beachvolleyball",
+        "biathlon",
+        "billiards",
+        "bmx",
+        "bobsleigh",
+        "boules",
+        "bowls",
+        "boxing",
+        "bullfighting",
+        "canadian_football",
+        "canoe",
+        "chess",
+        "cliff_diving",
+        "climbing",
+        "climbing_adventure",
+        "cockfighting",
+        "cricket",
+        "crossfit",
+        "croquet",
+        "curling",
+        "cycle_polo",
+        "cycling",
+        "darts",
+        "dog_agility",
+        "dog_racing",
+        "dragon_boat",
+        "equestrian",
+        "fencing",
+        "field_hockey",
+        "fitness",
+        "five-a-side",
+        "floorball",
+        "four_square",
+        "free_flying",
+        "futsal",
+        "gaelic_games",
+        "gaga",
+        "golf",
+        "gymnastics",
+        "handball",
+        "hapkido",
+        "hiking",
+        "horseshoes",
+        "horse_racing",
+        "ice_hockey",
+        "ice_skating",
+        "ice_stock",
+        "judo",
+        "karate",
+        "karting",
+        "kickboxing",
+        "kitesurfing",
+        "korfball",
+        "krachtbal",
+        "lacrosse",
+        "laser_tag",
+        "martial_arts",
+        "miniature_golf",
+        "model_aerodrome",
+        "motocross",
+        "motor",
+        "multi",
+        "netball",
+        "obstacle_course",
+        "orienteering",
+        "paddle_tennis",
+        "padel",
+        "paintball",
+        "parachuting",
+        "parkour",
+        "pelota",
+        "pesäpallo",
+        "pickleball",
+        "pilates",
+        "dance",
+        "pole_dance",
+        "racquet",
+        "rc_car",
+        "roller_skating",
+        "rowing",
+        "rugby_league",
+        "rugby_union",
+        "running",
+        "sailing",
+        "scuba_diving",
+        "shooting",
+        "shot-put",
+        "skateboard",
+        "ski_jumping",
+        "skiing",
+        "snooker",
+        "soccer",
+        "softball",
+        "speedway",
+        "squash",
+        "sumo",
+        "surfing",
+        "swimming",
+        "table_tennis",
+        "table_soccer",
+        "taekwondo",
+        "tennis",
+        "teqball",
+        "toboggan",
+        "trugo",
+        "ultimate",
+        "volleyball",
+        "wakeboarding",
+        "water_polo",
+        "water_ski",
+        "weightlifting",
+        "windsurfing",
+        "wrestling",
+        "yoga",
+        "zurkhaneh_sport"
+    ],
+    "telecom": [
+        "exchange",
+        "connection_point",
+        "distribution_point",
+        "service_device",
+        "data_center",
+        "line"
+    ],
+    "tourism": [
+        "alpine_hut",
+        "apartment",
+        "aquarium",
+        "artwork",
+        "attraction",
+        "camp_pitch",
+        "camp_site",
+        "caravan_site",
+        "chalet",
+        "gallery",
+        "guest_house",
+        "hostel",
+        "hotel",
+        "information",
+        "motel",
+        "museum",
+        "picnic_site",
+        "theme_park",
+        "viewpoint",
+        "wilderness_hut",
+        "zoo",
+        "yes"
+    ],
+    "water": [
+        "river",
+        "oxbow",
+        "canal",
+        "ditch",
+        "lock",
+        "fish_pass",
+        "lake",
+        "reservoir",
+        "pond",
+        "basin",
+        "lagoon",
+        "stream_pool",
+        "reflecting_pool",
+        "moat",
+        "wastewater"
+    ],
+    "waterway": [
+        "river",
+        "riverbank",
+        "stream",
+        "tidal_channel",
+        "canal",
+        "drain",
+        "ditch",
+        "pressurised",
+        "fairway",
+        "dock",
+        "boatyard",
+        "dam",
+        "weir",
+        "waterfall",
+        "lock_gate",
+        "soakhole",
+        "turning_point",
+        "water_point",
+        "fuel"
+    ],
+    "addr:housenumber": [
+        "user defined"
+    ],
+    "addr:housename": [
+        "user defined"
+    ],
+    "addr:flats": [
+        "user defined"
+    ],
+    "addr:conscriptionnumber": [
+        "user defined"
+    ],
+    "addr:street": [
+        "user defined"
+    ],
+    "addr:place": [
+        "user defined"
+    ],
+    "addr:postcode": [
+        "user defined"
+    ],
+    "addr:city": [
+        "user defined"
+    ],
+    "addr:country": [
+        "user defined"
+    ],
+    "addr:postbox": [
+        "user defined"
+    ],
+    "addr:full": [
+        "user defined"
+    ],
+    "addr:hamlet": [
+        "user defined"
+    ],
+    "addr:suburb": [
+        "user defined"
+    ],
+    "addr:subdistrict": [
+        "user defined"
+    ],
+    "addr:district": [
+        "user defined"
+    ],
+    "addr:province": [
+        "user defined"
+    ],
+    "addr:state": [
+        "user defined"
+    ],
+    "addr:county": [
+        "user defined"
+    ],
+    "addr:interpolation": [
+        "all/even/odd/ alphabetic",
+        "Number n"
+    ],
+    "addr:inclusion": [
+        "actual/estimate/potential"
+    ],
+    "attribution": [
+        ""
+    ],
+    "comment": [
+        ""
+    ],
+    "contact:email": [
+        ""
+    ],
+    "contact:fax": [
+        ""
+    ],
+    "contact:phone": [
+        ""
+    ],
+    "contact:website": [
+        ""
+    ],
+    "description": [
+        ""
+    ],
+    "email": [
+        ""
+    ],
+    "fax": [
+        ""
+    ],
+    "fixme": [
+        ""
+    ],
+    "image": [
+        ""
+    ],
+    "note": [
+        ""
+    ],
+    "phone": [
+        ""
+    ],
+    "source": [
+        "",
+        "extrapolation",
+        "historical",
+        "image",
+        "knowledge",
+        "survey",
+        "voice"
+    ],
+    "source:geometry": [
+        ""
+    ],
+    "source:name": [
+        ""
+    ],
+    "source:ref": [
+        ""
+    ],
+    "source_ref": [
+        "",
+        ""
+    ],
+    "todo": [
+        ""
+    ],
+    "url": [
+        ""
+    ],
+    "website": [
+        ""
+    ],
+    "wikipedia": [
+        ""
+    ],
+    "name": [
+        "User defined"
+    ],
+    "name:<lg>": [
+        "User defined"
+    ],
+    "name:left[:<lg>], name:right[:<lg>]": [
+        "User defined"
+    ],
+    "int_name[:<lg>]": [
+        "User defined"
+    ],
+    "loc_name[:<lg>]": [
+        "User defined"
+    ],
+    "nat_name[:<lg>]": [
+        "User defined"
+    ],
+    "official_name[:<lg>]": [
+        "User defined"
+    ],
+    "old_name[:<lg>]": [
+        "User defined"
+    ],
+    "ref_name[:<lg>]": [
+        "User defined"
+    ],
+    "reg_name[:<lg>]": [
+        "User defined"
+    ],
+    "short_name[:<lg>]": [
+        "User defined"
+    ],
+    "sorting_name[:<lg>]": [
+        "User defined"
+    ],
+    "alt_name[:<lg>]": [
+        "User defined"
+    ],
+    "nickname[:<lg>]": [
+        "User defined"
+    ],
+    "name_1   ,    name_2   , ...": [
+        ""
+    ],
+    "area": [
+        "yes"
+    ],
+    "brand": [
+        "user defined"
+    ],
+    "capacity": [
+        "amount"
+    ],
+    "charge": [
+        "amount"
+    ],
+    "clothes": [
+        "see key's page"
+    ],
+    "covered": [
+        "yes"
+    ],
+    "crossing": [
+        "no / traffic_signals / uncontrolled / island / unmarked"
+    ],
+    "crossing:island": [
+        "yes / no"
+    ],
+    "disused": [
+        "yes"
+    ],
+    "drinking_water": [
+        "yes / no"
+    ],
+    "drive_through": [
+        "yes / no"
+    ],
+    "drive_in": [
+        "yes / no"
+    ],
+    "ele": [
+        "Number"
+    ],
+    "end_date": [
+        "Date"
+    ],
+    "est_width": [
+        "Number"
+    ],
+    "fee": [
+        "yes / no"
+    ],
+    "fire_object:type": [
+        "poo / szo"
+    ],
+    "fire_operator": [
+        "Name"
+    ],
+    "fire_rank": [
+        "1bis / 2 to 5"
+    ],
+    "hazard": [
+        "see hazard"
+    ],
+    "hot_water": [
+        "yes / no"
+    ],
+    "inscription": [
+        "User Defined"
+    ],
+    "internet_access": [
+        "yes / wired / wlan / terminal / no"
+    ],
+    "layer": [
+        "-5 to 5"
+    ],
+    "leaf_cycle": [
+        "evergreen / deciduous / semi_evergreen / semi_deciduous / mixed"
+    ],
+    "leaf_type": [
+        "broadleaved / needleleaved / mixed / leafless"
+    ],
+    "location": [
+        "underground / overground / underwater / roof / indoor"
+    ],
+    "narrow": [
+        "yes"
+    ],
+    "nudism": [
+        "yes / obligatory / designated / no / customary / permissive"
+    ],
+    "opening_hours": [
+        "24/7 or mo md hh:mm-hh:mm. (read described syntax)"
+    ],
+    "opening_hours:drive_through": [
+        "24/7 or mo md hh:mm-hh:mm. (read described syntax)"
+    ],
+    "operator": [
+        "User Defined"
+    ],
+    "power_supply": [
+        "yes / no"
+    ],
+    "produce": [
+        "User Defined"
+    ],
+    "rental": [
+        "see key's page"
+    ],
+    "sauna": [
+        "yes / no"
+    ],
+    "service_times": [
+        "see opening_hours"
+    ],
+    "shower": [
+        "yes / no"
+    ],
+    "tidal": [
+        "yes"
+    ],
+    "toilets": [
+        "yes / no"
+    ],
+    "topless": [
+        "yes / no"
+    ],
+    "toilets:wheelchair": [
+        "yes / no"
+    ],
+    "wheelchair": [
+        "yes / no / limited"
+    ],
+    "wood": [
+        "coniferous / deciduous / mixed"
+    ],
+    "iata": [
+        ""
+    ],
+    "icao": [
+        ""
+    ],
+    "int_ref": [
+        ""
+    ],
+    "lcn_ref": [
+        ""
+    ],
+    "loc_ref": [
+        ""
+    ],
+    "local_ref": [
+        ""
+    ],
+    "nat_ref": [
+        ""
+    ],
+    "ncn_ref": [
+        ""
+    ],
+    "old_ref": [
+        ""
+    ],
+    "rcn_ref": [
+        ""
+    ],
+    "ref": [
+        ""
+    ],
+    "reg_ref": [
+        ""
+    ],
+    "route_ref": [
+        ""
+    ],
+    "access": [
+        "agricultural / delivery / designated / destination / forestry / no / official / permissive / private / yes"
+    ],
+    "agricultural": [
+        "yes / no"
+    ],
+    "atv": [
+        "For values see access above"
+    ],
+    "bdouble": [
+        "For values see access above"
+    ],
+    "bicycle": [
+        "For values see access above + dismount"
+    ],
+    "boat": [
+        "For values see access above"
+    ],
+    "electric_bicycle": [
+        "For values see access above"
+    ],
+    "foot": [
+        "For values see access above"
+    ],
+    "forestry": [
+        "yes / no"
+    ],
+    "golf_cart": [
+        "For values see access above"
+    ],
+    "goods": [
+        "For values see access above"
+    ],
+    "hazmat": [
+        "For values see access above"
+    ],
+    "hgv": [
+        "For values see access above"
+    ],
+    "horse": [
+        "For values see access above"
+    ],
+    "inline_skates": [
+        "yes / no"
+    ],
+    "lhv": [
+        "For values see access above"
+    ],
+    "mofa": [
+        "For values see access above"
+    ],
+    "moped": [
+        "For values see access above"
+    ],
+    "motorboat": [
+        "For values see access above"
+    ],
+    "motorcar": [
+        "For values see access above"
+    ],
+    "motorcycle": [
+        "For values see access above"
+    ],
+    "motor_vehicle": [
+        "For values see access above"
+    ],
+    "psv": [
+        "For values see access above"
+    ],
+    "roadtrain": [
+        "For values see access above"
+    ],
+    "ski": [
+        "For values see access above"
+    ],
+    "speed_pedelec": [
+        "For values see access above"
+    ],
+    "tank": [
+        "For values see access above"
+    ],
+    "vehicle": [
+        "For values see access above"
+    ],
+    "4wd_only": [
+        "yes"
+    ],
+    "alcohol": [
+        "yes / no"
+    ],
+    "dog": [
+        "yes / no"
+    ],
+    "drinking_water:legal": [
+        "yes / no"
+    ],
+    "female": [
+        "yes"
+    ],
+    "male": [
+        "yes"
+    ],
+    "max_age": [
+        "age"
+    ],
+    "maxaxleload": [
+        "Weight"
+    ],
+    "maxheight": [
+        "Height"
+    ],
+    "maxlength": [
+        "Length"
+    ],
+    "maxstay": [
+        "Number"
+    ],
+    "maxweight": [
+        "Weight"
+    ],
+    "maxwidth": [
+        "Width"
+    ],
+    "min_age": [
+        "age"
+    ],
+    "minspeed": [
+        "Speed"
+    ],
+    "noexit": [
+        "yes"
+    ],
+    "openfire": [
+        "yes / no"
+    ],
+    "Relation:restriction": [
+        ""
+    ],
+    "smoking": [
+        "yes / no"
+    ],
+    "toll": [
+        "yes"
+    ],
+    "traffic_sign": [
+        "city_limit"
+    ],
+    "unisex": [
+        "yes"
+    ]
+}
