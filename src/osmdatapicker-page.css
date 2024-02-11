@@ -1,0 +1,55 @@
+.leaflet-osmdatapicker-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  z-index: 10000;
+}
+
+.leaflet-osmdatapicker-content {
+  margin-left: 3%;
+}
+
+.leaflet-osmdatapicker-header {
+  background-color: rgb(154, 199, 124);
+  color: #fff;
+  padding: 1px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  text-align: center;
+}
+
+.leaflet-osmdatapicker-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#osmDataPickerSubmit {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+#osmDataPickerCancel {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.osmListBox {
+  border: 1px solid black;
+  width: 80%;
+  padding: 5px;
+}
