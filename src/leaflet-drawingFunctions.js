@@ -5,8 +5,7 @@
     var drawing = true;
     var drawnPolygon = [];
     var lines = [];
-    var firstPointMarker = null;
-
+    var markers = [];
     // Change cursor while drawing
     map.getContainer().style.cursor = "crosshair";
 
@@ -17,16 +16,18 @@
 
         if (drawnPolygon.length === 1) {
           // Add the first point marker with red color
-          firstPointMarker = L.circleMarker(latlng, {
+          var firstPointMarker = L.circleMarker(latlng, {
             color: "red",
             radius: 6,
           }).addTo(map);
+          markers.push(firstPointMarker);
         } else {
           // Add a marker for each point clicked with a blue circle
           var marker = L.circleMarker(latlng, {
             color: "blue",
             radius: 6,
           }).addTo(map);
+          markers.push(marker);
 
           // Draw a line between the last point and the current point
           var line = L.polyline(
@@ -60,15 +61,14 @@
           fillColor: "lightblue",
           fillOpacity: 0.3,
         }).addTo(map);
-        // Remove the lines when the drawing is complete
-        lines.forEach(function (line) {
-          map.removeLayer(line);
-        });
 
-        // Reset the color of the first point to blue
-        if (firstPointMarker) {
-          firstPointMarker.setStyle({ color: "blue" });
-        }
+        // Remove the lines and markers when the drawing is complete
+        markers.forEach(function (markers) {
+          map.removeLayer(markers);
+        });
+        lines.forEach(function (lines) {
+          map.removeLayer(lines);
+        });
         callback(drawnPolygon); // Call the callback function with the drawn polygon coordinates
       }
     };

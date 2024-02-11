@@ -80,8 +80,6 @@
         max_latitude +
         "," +
         max_longitude;
-
-      console.log(bbox);
       // Call the function to send the request to OSM Overpass API
       OSMRequests.sendOverpassRequest(
         selectedKey,
@@ -89,12 +87,14 @@
         bbox,
         drawnPolygon
       );
+      closeOSMDataPickerDialog();
+      resetDialogandPolygon();
     });
 
     var cancelButton = dialog.querySelector("#osmDataPickerCancel");
     cancelButton.addEventListener("click", function () {
-      console.log("Canceled");
       closeOSMDataPickerDialog();
+      resetDialogandPolygon();
     });
 
     function openOSMDataPickerDialog() {
@@ -148,6 +148,22 @@
         });
     });
   };
+
+  // Function to remove the drawn polygon from the map and clear dropdown menus
+  function resetDialogandPolygon() {
+    drawnPolygon = [];
+    map.eachLayer(function (layer) {
+      if (layer instanceof L.Polygon) {
+        map.removeLayer(layer);
+      }
+    });
+    // Clear the selected value of KeysList dropdown menu
+    var keysList = document.getElementById("KeysList");
+    keysList.selectedIndex = 0;
+    // Clear the selected value of ValuesList dropdown menu
+    var valuesList = document.getElementById("ValuesList");
+    valuesList.innerHTML = "";
+  }
 
   L.OSMDataPicker = OSMDataPicker;
 })(window.L);
