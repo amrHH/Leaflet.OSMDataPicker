@@ -1,5 +1,6 @@
 (function (L) {
   var OSMDataPicker = {};
+  var drawnPolygon = [];
 
   OSMDataPicker.addControl = function () {
     var customControl = L.Control.extend({
@@ -11,7 +12,8 @@
         button.innerHTML = "Open OSM Data Picker";
         L.DomEvent.on(button, "click", function (e) {
           L.DomEvent.stopPropagation(e);
-          L.DrawingFunctions.startDrawing(map, function (drawnPolygon) {
+          L.DrawingFunctions.startDrawing(map, function (polygon) {
+            drawnPolygon = polygon;
             openOSMDataPickerDialog();
             console.log("Polygon drawn:", drawnPolygon);
           });
@@ -50,7 +52,34 @@
 
     var submitButton = dialog.querySelector("#osmDataPickerSubmit");
     submitButton.addEventListener("click", function () {
-      console.log("Validated");
+      var keysList = document.getElementById("KeysList");
+      var selectedKey = keysList.value;
+      var valuesList = document.getElementById("ValuesList");
+      var selectedValue = valuesList.value;
+
+      // Make the bounding box for osm query
+      var polygonBounds = L.polygon(drawnPolygon).getBounds();
+      var min_latitude = polygonBounds.getSouth();
+      var min_longitude = polygonBounds.getWest();
+      var max_latitude = polygonBounds.getNorth();
+      var max_longitude = polygonBounds.getEast();
+      var bbox =
+        min_latitude +
+        "," +
+        min_longitude +
+        "," +
+        max_latitude +
+        "," +
+        max_longitude;
+
+      console.log(bbox);
+      // Call the function to send the request to OSM Overpass API
+      OSMRequests.sendOverpassRequest(
+        selectedKey,
+        selectedValue,
+        bbox,
+        drawnPolygon
+      );
     });
 
     var cancelButton = dialog.querySelector("#osmDataPickerCancel");

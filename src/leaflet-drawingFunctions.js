@@ -60,7 +60,6 @@
           fillColor: "lightblue",
           fillOpacity: 0.3,
         }).addTo(map);
-
         // Remove the lines when the drawing is complete
         lines.forEach(function (line) {
           map.removeLayer(line);
@@ -70,7 +69,7 @@
         if (firstPointMarker) {
           firstPointMarker.setStyle({ color: "blue" });
         }
-        callback(drawnPolygon);
+        callback(drawnPolygon); // Call the callback function with the drawn polygon coordinates
       }
     };
 
