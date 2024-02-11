@@ -9,7 +9,16 @@
       },
       onAdd: function (map) {
         var button = L.DomUtil.create("button", "leaflet-osmdatapicker-button");
-        button.innerHTML = "Open OSM Data Picker";
+        button.style.position = "relative";
+        button.style.padding = "0";
+        button.style.width = "30px";
+        button.style.height = "30px";
+        var svgIcon = L.DomUtil.create("img", "leaflet-osmdatapicker-icon");
+        svgIcon.src = "./assets/openstreetmap.svg";
+        svgIcon.style.width = "100%";
+        svgIcon.style.height = "100%";
+        svgIcon.style.objectFit = "contain";
+        button.appendChild(svgIcon);
         L.DomEvent.on(button, "click", function (e) {
           L.DomEvent.stopPropagation(e);
           L.DrawingFunctions.startDrawing(map, function (polygon) {
