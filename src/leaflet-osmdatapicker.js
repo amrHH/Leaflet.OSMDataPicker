@@ -1,6 +1,7 @@
 (function (L) {
   var OSMDataPicker = {};
   var drawnPolygon = [];
+  var buttonClicked = false;
 
   OSMDataPicker.addControl = function () {
     var customControl = L.Control.extend({
@@ -13,21 +14,43 @@
         button.style.padding = "0";
         button.style.width = "30px";
         button.style.height = "30px";
+        var popup = L.DomUtil.create("div", "leaflet-osmdatapicker-popup");
+        popup.innerHTML = "Click 'Enter' to end drawing";
+        popup.style.position = "absolute";
+        popup.style.display = "none";
+        popup.style.backgroundColor = "#ffffff";
+        popup.style.whiteSpace = "nowrap";
         var svgIcon = L.DomUtil.create("img", "leaflet-osmdatapicker-icon");
         svgIcon.src = "./assets/openstreetmap.svg";
         svgIcon.style.width = "100%";
         svgIcon.style.height = "100%";
         svgIcon.style.objectFit = "contain";
         button.appendChild(svgIcon);
+        button.appendChild(popup);
+
         L.DomEvent.on(button, "click", function (e) {
           L.DomEvent.stopPropagation(e);
-          L.DrawingFunctions.startDrawing(map, function (polygon) {
-            drawnPolygon = polygon;
-            openOSMDataPickerDialog();
-            console.log("Polygon drawn:", drawnPolygon);
-          });
-        });
+          if (!buttonClicked) {
+            buttonClicked = true;
+            togglePopup();
 
+            L.DrawingFunctions.startDrawing(map, function (polygon) {
+              drawnPolygon = polygon;
+              openOSMDataPickerDialog();
+            });
+          }
+        });
+        // Function to toggle popup visibility
+        function togglePopup() {
+          if (popup.style.display === "none") {
+            var buttonRect = button.getBoundingClientRect();
+            popup.style.right = buttonRect.width + "px";
+            popup.style.bottom = 0 + "px";
+            popup.style.display = "block";
+          } else {
+            popup.style.display = "none";
+          }
+        }
         return button;
       },
     });
@@ -55,6 +78,7 @@
               <button id="osmDataPickerCancel">Cancel</button>
           </div>
       `;
+
     map.getContainer().appendChild(dialog);
 
     dialog.style.display = "none";
@@ -104,6 +128,9 @@
 
     function closeOSMDataPickerDialog() {
       dialog.style.display = "none";
+      var popup = document.querySelector(".leaflet-osmdatapicker-popup");
+      popup.style.display = "none";
+      buttonClicked = false;
     }
 
     // Load JSON file and populate KeysList
