@@ -15,7 +15,7 @@
       way["${selectedKey}"="${selectedValue}"](${polygonCoordinates});
       rel["${selectedKey}"="${selectedValue}"](${polygonCoordinates});
     );
-    out;`;
+    out geom;`;
     // Send the query to API Overpass
     fetch("https://overpass-api.de/api/interpreter", {
       method: "POST",
@@ -34,9 +34,9 @@
   function addDataToMap(data, drawnPolygon) {
     if (data.elements.length > 0) {
       data.elements.forEach(function (element) {
+        console.log(element.type);
         switch (element.type) {
           case "node":
-            // Create point for each node
             var latlng = L.latLng(element.lat, element.lon);
             if (pointInPolygon(latlng, drawnPolygon)) {
               var marker = L.marker(latlng).addTo(map);
@@ -46,6 +46,44 @@
                   popupContent += key + ": " + element.tags[key] + "<br>";
                 }
                 marker.bindPopup(popupContent);
+              }
+            }
+            break;
+          case "way":
+            var latlngs = [];
+            element.geometry.forEach(function (node) {
+              latlngs.push(L.latLng(node.lat, node.lon));
+            });
+            var polygon = L.polygon(latlngs).addTo(map);
+            if (element.tags) {
+              var popupContent = "<b>Informations:</b><br>";
+              for (var key in element.tags) {
+                popupContent += key + ": " + element.tags[key] + "<br>";
+              }
+              polygon.bindPopup(popupContent);
+            }
+            break;
+          case "relation":
+            if (element.members) {
+              var allLatlngs = [];
+              element.members.forEach(function (member) {
+                if (member.geometry) {
+                  var memberLatlngs = [];
+                  member.geometry.forEach(function (node) {
+                    memberLatlngs.push(L.latLng(node.lat, node.lon));
+                  });
+                  allLatlngs = allLatlngs.concat(memberLatlngs);
+                }
+              });
+              if (allLatlngs.length > 0) {
+                var polygon = L.polygon(allLatlngs).addTo(map);
+                if (element.tags) {
+                  var popupContent = "<b>Informations:</b><br>";
+                  for (var key in element.tags) {
+                    popupContent += key + ": " + element.tags[key] + "<br>";
+                  }
+                  polygon.bindPopup(popupContent);
+                }
               }
             }
             break;
