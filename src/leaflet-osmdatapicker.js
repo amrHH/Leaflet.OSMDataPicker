@@ -178,18 +178,31 @@
 
   // Function to remove the drawn polygon from the map and clear dropdown menus
   function resetDialogandPolygon() {
-    drawnPolygon = [];
     map.eachLayer(function (layer) {
-      if (layer instanceof L.Polygon) {
+      if (
+        layer instanceof L.Polygon &&
+        arraysEqual(layer.getLatLngs()[0], drawnPolygon)
+      ) {
         map.removeLayer(layer);
       }
     });
+    drawnPolygon = [];
     // Clear the selected value of KeysList dropdown menu
     var keysList = document.getElementById("KeysList");
     keysList.selectedIndex = 0;
     // Clear the selected value of ValuesList dropdown menu
     var valuesList = document.getElementById("ValuesList");
     valuesList.innerHTML = "";
+  }
+
+  // Function to compare arrays for equality
+  function arraysEqual(arr1, arr2) {
+    if (arr1.length !== arr2.length) return false;
+    for (var i = 0; i < arr1.length; i++) {
+      if (arr1[i].lat !== arr2[i].lat || arr1[i].lng !== arr2[i].lng)
+        return false;
+    }
+    return true;
   }
 
   L.OSMDataPicker = OSMDataPicker;
