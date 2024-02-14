@@ -32,6 +32,8 @@
   };
 
   function addDataToMap(data, drawnPolygon) {
+    var borderColor = generateRandomColor();
+    var fillColor = generateRandomColor();
     if (data.elements.length > 0) {
       data.elements.forEach(function (element) {
         console.log(element.type);
@@ -39,7 +41,12 @@
           case "node":
             var latlng = L.latLng(element.lat, element.lon);
             if (pointInPolygon(latlng, drawnPolygon)) {
-              var marker = L.marker(latlng).addTo(map);
+              var marker = L.circleMarker(latlng, {
+                radius: 8,
+                color: borderColor,
+                fillColor: fillColor,
+                fillOpacity: 0.5,
+              }).addTo(map);
               if (element.tags) {
                 var popupContent = "<b>Informations:</b><br>";
                 for (var key in element.tags) {
@@ -60,7 +67,11 @@
               latlngs[0].equals(latlngs[latlngs.length - 1]);
 
             if (isPolygon) {
-              var polygon = L.polygon(latlngs).addTo(map);
+              var polygon = L.polygon(latlngs, {
+                color: borderColor,
+                fillColor: fillColor,
+                fillOpacity: 0.5,
+              }).addTo(map);
               if (element.tags) {
                 var popupContent = "<b>Informations:</b><br>";
                 for (var key in element.tags) {
@@ -69,7 +80,9 @@
                 polygon.bindPopup(popupContent);
               }
             } else {
-              var polyline = L.polyline(latlngs).addTo(map);
+              var polyline = L.polyline(latlngs, { color: borderColor }).addTo(
+                map
+              );
               if (element.tags) {
                 var popupContent = "<b>Informations:</b><br>";
                 for (var key in element.tags) {
@@ -131,6 +144,15 @@
       if (intersect) inside = !inside;
     }
     return inside;
+  }
+
+  function generateRandomColor() {
+    var letters = "0123456789ABCDEF";
+    var color = "#";
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
   }
 
   window.OSMRequests = OSMRequests;
