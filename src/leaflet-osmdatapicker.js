@@ -21,7 +21,7 @@
         popup.style.backgroundColor = "#ffffff";
         popup.style.whiteSpace = "nowrap";
         var svgIcon = L.DomUtil.create("img", "leaflet-osmdatapicker-icon");
-        svgIcon.src = "./assets/openstreetmap.svg";
+        svgIcon.src = "../src/assets/openstreetmap.svg";
         svgIcon.style.width = "100%";
         svgIcon.style.height = "100%";
         svgIcon.style.objectFit = "contain";
@@ -134,7 +134,7 @@
     }
 
     // Load JSON file and populate KeysList
-    fetch("./assets/osmtags.json")
+    fetch("../src/assets/osmtags.json")
       .then((response) => response.json())
       .then((data) => {
         var keyList = document.getElementById("KeysList");
@@ -157,7 +157,7 @@
       valuesList.innerHTML = "";
 
       // Populate ValuesList based on selectedKey
-      fetch("./assets/osmtags.json")
+      fetch("../src/assets/osmtags.json")
         .then((response) => response.json())
         .then((data) => {
           var values = data[selectedKey];
