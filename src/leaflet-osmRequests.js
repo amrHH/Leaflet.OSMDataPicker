@@ -54,15 +54,32 @@
             element.geometry.forEach(function (node) {
               latlngs.push(L.latLng(node.lat, node.lon));
             });
-            var polygon = L.polygon(latlngs).addTo(map);
-            if (element.tags) {
-              var popupContent = "<b>Informations:</b><br>";
-              for (var key in element.tags) {
-                popupContent += key + ": " + element.tags[key] + "<br>";
+            // Check if way is polygon or polyline
+            var isPolygon =
+              latlngs.length > 1 &&
+              latlngs[0].equals(latlngs[latlngs.length - 1]);
+
+            if (isPolygon) {
+              var polygon = L.polygon(latlngs).addTo(map);
+              if (element.tags) {
+                var popupContent = "<b>Informations:</b><br>";
+                for (var key in element.tags) {
+                  popupContent += key + ": " + element.tags[key] + "<br>";
+                }
+                polygon.bindPopup(popupContent);
               }
-              polygon.bindPopup(popupContent);
+            } else {
+              var polyline = L.polyline(latlngs).addTo(map);
+              if (element.tags) {
+                var popupContent = "<b>Informations:</b><br>";
+                for (var key in element.tags) {
+                  popupContent += key + ": " + element.tags[key] + "<br>";
+                }
+                polyline.bindPopup(popupContent);
+              }
             }
             break;
+
           case "relation":
             if (element.members) {
               var allLatlngs = [];
