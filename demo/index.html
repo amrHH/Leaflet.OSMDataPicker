@@ -9,16 +9,13 @@
       href="https://unpkg.com/leaflet@latest/dist/leaflet.css"
     />
     <link rel="stylesheet" href="../src/osmdatapicker-page.css" />
+    <script src="https://unpkg.com/leaflet@latest/dist/leaflet.js"></script>
+    <script src="../src/leaflet-osmdatapicker.js"></script>
+
     <title>Demo</title>
   </head>
   <body>
     <div id="map" style="height: 90vh"></div>
-
-    <script src="https://unpkg.com/leaflet@latest/dist/leaflet.js"></script>
-    <script src="../src/leaflet-drawingfunctions.js"></script>
-
-    <script src="../src/leaflet-osmdatapicker.js"></script>
-    <script src="../src/leaflet-osmrequests.js"></script>
 
     <script>
       var map = L.map("map").setView([46.6031, 1.8883], 6);
