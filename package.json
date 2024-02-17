@@ -2,7 +2,7 @@
   "name": "leaflet.osmdatapicker",
   "version": "1.0.0",
   "description": "Getting OSM data on leaflet map",
-  "main": "src/leaflet-osmdatapicker.js",
+  "main": "./src/leaflet-osmdatapicker.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,7 +16,5 @@
   "license": "MIT",
   "peerDependencies": {
     "leaflet": "^1.0.0"
-  },
-  "dependencies": {},
-  "devDependencies": {}
+  }
 }
