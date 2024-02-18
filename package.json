@@ -14,7 +14,8 @@
   ],
   "author": "Amr HAMADEH",
   "license": "MIT",
-  "peerDependencies": {
-    "leaflet": "^1.0.0"
+  "repository": "https://github.com/amrHH/Leaflet.OSMDataPicker",
+  "dependencies": {
+    "leaflet": "^1.9.4"
   }
 }

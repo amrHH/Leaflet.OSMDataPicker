@@ -1,3 +1,7 @@
+/*
+ * leaflet.osmdatapicker
+ * (c) Amr HAMADEH; MIT License
+ */
 (function (L) {
   var OSMDataPicker = {};
   var drawnPolygon = [];
@@ -23,7 +27,6 @@
         popup.style.backgroundColor = "#ffffff";
         popup.style.whiteSpace = "nowrap";
         var svgIcon = L.DomUtil.create("img", "leaflet-osmdatapicker-icon");
-        svgIcon.src = "../src/assets/openstreetmap.svg";
         svgIcon.style.width = "100%";
         svgIcon.style.height = "100%";
         svgIcon.style.objectFit = "contain";
@@ -136,7 +139,7 @@
     }
 
     // Load JSON file and populate KeysList
-    fetch("../src/assets/osmtags.json")
+    fetch("./node_modules/leaflet.osmdatapicker/src/assets/osmtags.json")
       .then((response) => response.json())
       .then((data) => {
         var keyList = document.getElementById("KeysList");
@@ -159,7 +162,7 @@
       valuesList.innerHTML = "";
 
       // Populate ValuesList based on selectedKey
-      fetch("../src/assets/osmtags.json")
+      fetch("./node_modules/leaflet.osmdatapicker/src/assets/osmtags.json")
         .then((response) => response.json())
         .then((data) => {
           var values = data[selectedKey];
