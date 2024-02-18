@@ -1,3 +1,7 @@
+.leaflet-osmdatapicker-icon {
+  background-image: url("../src/assets/openstreetmap.svg");
+}
+
 .leaflet-osmdatapicker-dialog {
   position: absolute;
   top: 50%;
