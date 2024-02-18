@@ -139,7 +139,7 @@
     }
 
     // Load JSON file and populate KeysList
-    fetch("./node_modules/leaflet.osmdatapicker/src/assets/osmtags.json")
+    fetch("../src/assets/osmtags.json")
       .then((response) => response.json())
       .then((data) => {
         var keyList = document.getElementById("KeysList");
@@ -162,7 +162,7 @@
       valuesList.innerHTML = "";
 
       // Populate ValuesList based on selectedKey
-      fetch("./node_modules/leaflet.osmdatapicker/src/assets/osmtags.json")
+      fetch("../src/assets/osmtags.json")
         .then((response) => response.json())
         .then((data) => {
           var values = data[selectedKey];
