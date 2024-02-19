@@ -27,13 +27,21 @@ You can view a demo [here](https://amrhh.github.io/Leaflet.OSMDataPicker/).
 npm install leaflet.osmdatapicker
 ```
 
+then add these 2 lines in your main html file :
+
+```html
+<script src="./node_modules/leaflet.osmdatapicker/src/leaflet-osmdatapicker.js"></script>
+<link
+  rel="stylesheet"
+  href="./node_modules/leaflet.osmdatapicker/src/osmdatapicker-page.css"
+/>
+```
+
 ## Usage
 
-```bash
+```javascript
 var map = L.map("map").setView([46.6031, 1.8883], 6);
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(
-map
-);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
 
 L.OSMDataPicker.addControl();
 ```
