@@ -1,3 +1,6 @@
+<a href="https://www.npmjs.com/package/leaflet.osmdatapicker"><img alt="npm" src="https://img.shields.io/npm/dt/leaflet.osmdatapicker"></a>
+<a href="https://www.npmjs.com/package/leaflet.osmdatapicker"><img alt="npm" src= "https://img.shields.io/npm/v/leaflet.osmdatapicker?color=red"></a>
+
 # Leaflet OSM Data Picker Plugin
 
 Leaflet OSMDataPicker Plugin is a JavaScript plugin that provides a very simple interface for selecting OpenStreetMap (OSM) data within a drawn polygon on a Leaflet map.
@@ -37,13 +40,24 @@ then add these 2 lines in your main html file :
 />
 ```
 
+or use with CDN :
+
+```html
+<script src="https://unpkg.com/leaflet.osmdatapicker@latest/src/leaflet-osmdatapicker.js"></script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet.osmdatapicker@latest/src/osmdatapicker-
+page.css"
+/>
+```
+
 ## Usage
 
 ```javascript
 var map = L.map("map").setView([46.6031, 1.8883], 6);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
 
-L.OSMDataPicker.addControl();
+L.OSMDataPicker.addControl(map);
 ```
 
 ## Licence
