@@ -9,7 +9,7 @@
   var OSMRequests = {};
   var DrawingFunctions = {};
 
-  OSMDataPicker.addControl = function () {
+  OSMDataPicker.addControl = function (map) {
     var customControl = L.Control.extend({
       options: {
         position: "topright",
@@ -114,16 +114,17 @@
         selectedKey,
         selectedValue,
         bbox,
-        drawnPolygon
+        drawnPolygon,
+        map
       );
       closeOSMDataPickerDialog();
-      resetDialogandPolygon();
+      resetDialogandPolygon(map);
     });
 
     var cancelButton = dialog.querySelector("#osmDataPickerCancel");
     cancelButton.addEventListener("click", function () {
       closeOSMDataPickerDialog();
-      resetDialogandPolygon();
+      resetDialogandPolygon(map);
     });
 
     function openOSMDataPickerDialog() {
@@ -182,7 +183,7 @@
   };
 
   // Function to remove the drawn polygon from the map and clear dropdown menus
-  function resetDialogandPolygon() {
+  function resetDialogandPolygon(map) {
     map.eachLayer(function (layer) {
       if (
         layer instanceof L.Polygon &&
@@ -289,7 +290,8 @@
     selectedKey,
     selectedValue,
     polygonCoordinates,
-    drawnPolygon
+    drawnPolygon,
+    map
   ) {
     // Construction of the query
 
@@ -307,20 +309,18 @@
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log("Response from Overpass API:", data);
-        addDataToMap(data, drawnPolygon);
+        addDataToMap(data, drawnPolygon, map);
       })
       .catch((error) => {
         console.error("Error sending Overpass request:", error);
       });
   };
 
-  function addDataToMap(data, drawnPolygon) {
+  function addDataToMap(data, drawnPolygon, map) {
     var borderColor = generateRandomColor();
     var fillColor = generateRandomColor();
     if (data.elements.length > 0) {
       data.elements.forEach(function (element) {
-        console.log(element.type);
         switch (element.type) {
           case "node":
             var latlng = L.latLng(element.lat, element.lon);
