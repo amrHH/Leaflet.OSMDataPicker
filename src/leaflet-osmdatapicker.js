@@ -62,6 +62,9 @@
 
     var control = new customControl();
     control.addTo(map);
+    map.attributionControl.addAttribution(
+      'Data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    );
 
     // Create the dialog form
     var dialog = L.DomUtil.create("div", "leaflet-osmdatapicker-dialog");
