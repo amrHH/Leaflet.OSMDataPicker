@@ -1,6 +1,6 @@
 {
   "name": "leaflet.osmdatapicker",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Getting OSM data on leaflet map",
   "main": "./src/leaflet-osmdatapicker.js",
   "scripts": {
